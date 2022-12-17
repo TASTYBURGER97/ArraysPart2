@@ -1,9 +1,14 @@
 import java.util.Arrays;
 
 public class Main {
+
+
+
+
+
     public static void main(String[] args) {
         ////////Task1 /////////
-        int[] array = arrayRandom (30);
+        int[] array = generateRandomArray ();
         int sum = 0;
         for (int number : array) {
             sum += number;
@@ -43,17 +48,20 @@ public class Main {
 
 
     }
+    int[] arr = generateRandomArray();
 
-    public static int[] arrayRandom(int length) {
-        Random random = new Random();
-        int[] array = new int[length];
-        for (int i = 0; i < length; i++) {
-            array[i] = random.nextInt(100_000) + 100_000;
+    public static int[] generateRandomArray() {
+        java.util.Random random = new java.util.Random();
+        int[] arr = new int[30];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100_000) + 100_000;
         }
-        return array;
+        return arr;
     }
 
-}
+    }
+
+
 
 
 

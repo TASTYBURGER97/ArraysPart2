@@ -27,9 +27,9 @@ public class Main {
         System.out.println("Минимальное значение = " + min + "Максимальное значние = " + max);
 
         Arrays.sort(array);
-        System.out.println("Минимальный расход в течении месяца = %d, максимальный расход = %d \n", array[0], array[array.length-1]);
+        System.out.printf("Минимальный расход в течении месяца = %d, максимальный расход = %d \n", array[0], array[array.length-1]);
 
-        System.out.println("Средний расход за месяц составил: %.2f \n", (double)sum/ array.length);
+        System.out.printf("Средний расход за месяц составил: %.2f \n", (double)sum/ array.length);
 
         ////////Task3 /////////
         String string = "Иван Иванович Иванов";

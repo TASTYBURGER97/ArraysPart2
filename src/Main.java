@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         ////////Task1 /////////
+
         int[] array = generateRandomArray ();
         int sum = 0;
         for (int number : array) {
